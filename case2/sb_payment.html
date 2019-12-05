@@ -65,7 +65,7 @@
 
          <label for="stateBox">State</label>
          <input name="state" id="stateBox" type="text" list="stateList" required>
-         <datalist id="stateList">
+         <datalist id="stateList" >
             <option value="AL">
             <option value="AK">
             <option value="AZ">
@@ -120,13 +120,13 @@
 
 
          <label for="zipBox">ZIP/Postal Code</label>
-         <input name="zip" id="zipBox" type="text" >
+         <input name="zip" id="zipBox" type="text" pattern="^\d{5}(-\d{4})?$">
 
          <label for="countryBox">Country</label>
-         <input name="country" id="countryBox" type="text" required>
+         <input name="country" id="countryBox" type="text" value="United States" required>
 
          <label for="phoneBox">Phone</label>
-         <input name="phone" id="phoneBox" type="tel" required>
+         <input name="phone" id="phoneBox" type="tel" pattern="^\d{10}$|^(\(\d{3})\)\s*)?\{3}[\s-]?\d{4}$" required>
       </fieldset>
       </form>
 
