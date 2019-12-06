@@ -118,7 +118,6 @@
             <option value="WY">
          </datalist>
 
-
          <label for="zipBox">ZIP/Postal Code</label>
          <input name="zip" id="zipBox" type="text" pattern="^\d{5}(-\d{4})?$">
 
@@ -127,7 +126,64 @@
 
          <label for="phoneBox">Phone</label>
          <input name="phone" id="phoneBox" type="tel" pattern="^\d{10}$|^(\(\d{3})\)\s*)?\{3}[\s-]?\d{4}$" required>
+            </fieldset>
+      
       </fieldset>
+      <fieldset id="creditCard">
+            <legend>Credit Card (required)</legend>
+            <fieldset>
+               <label class="cardLabel">
+                  <input name="cardLabel" value="amex" type="radio">
+                  <img src="sb_amex.png">
+               </label>
+               <label class="cardLabel">
+                  <input name="cardLabel" value="discover" type="radio">
+                  <img src="sb_discover.png">
+               </label>
+               <label class="cardLabel">
+                  <input name="cardLabel" value="master" type="radio">
+                  <img src="sb_master.png">
+               </label>
+               <label class="cardLabel">
+                  <input name="cardLabel" value="visa"  type="radio">
+                  <img src="sb_visa.png">
+               </label>
+            </fieldset>
+            <label>Credit Card Number</label>
+            <input id="cardBox" name="cardNumber" pattern="^(?:4[0-9]{12}(?:[0-9]{3})
+            ?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(
+               ?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" required>
+
+            <label for="monthList">Experation Date</label>
+            <select id="yearList" name="cardYear" required>
+               <option value="--Month--">--Month--</option>
+               <option value="January (01)">January (01</option>
+               <option value="Febuary (02)">Febuary (02)</option>
+               <option value="March (03)">March (03)</option>
+               <option value="April (04)">April (04)</option>
+               <option value="May (05)">May (05)</option>
+               <option value="June (06)">June (06)</option>
+               <option value="July (07)">July (07)</option>
+               <option value="August (08)">August (08)</option>
+               <option value="September (09)">September (09)</option>
+               <option value="October (10)">October (10)</option>
+               <option value="November (11)">November (11)</option>
+               <option value="December (12)">December (12)</option>
+            </select>
+            <select id="yearList" name="cardYear" required>
+                  <option value="--Year--">--Year--</option>
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+            </select>
+            <label for="cssBox">CSC</label>
+            <input id="cscBox" pattern="^\d{3}$" max="3" placeholder="nnn">
+      </fieldset>
+         <button type="submit">
+            <img src="sb_button.png" alt="next">
+         </button>
       </form>
 
       <aside>
