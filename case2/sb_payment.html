@@ -125,7 +125,7 @@
          <input name="country" id="countryBox" type="text" value="United States" required>
 
          <label for="phoneBox">Phone</label>
-         <input name="phone" id="phoneBox" type="tel" pattern="^\d{10}$|^(\(\d{3})\)\s*)?\{3}[\s-]?\d{4}$" required>
+         <input name="phone" id="phoneBox" type="tel" pattern="^\d{10}$|^(\(\d{3})\)\s*)?\{3}[\s-]?\d{4}$" required max="10">
       
       </fieldset>
       <fieldset id="creditCard">
@@ -177,7 +177,7 @@
                   <option value="2020">2020</option>
                   <option value="2021">2021</option>
             </select>
-            <label for="cssBox">CSC</label>
+            <label for="cscBox">CSC</label>
             <input id="cscBox" pattern="^\d{3}$" max="3" placeholder="nnn">
       </fieldset>
          <button type="submit">
